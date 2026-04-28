@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Fale Comigo </title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #fce4ec, #e3f2fd);
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 400px;
+      margin: 80px auto;
+      background: white;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      color: #444;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      outline: none;
+      transition: 0.3s;
+    }
+
+    input:focus, textarea:focus {
+      border-color: #ff80ab;
+      box-shadow: 0 0 5px rgba(255,128,171,0.5);
+    }
+
+    textarea {
+      resize: none;
+      height: 100px;
+    }
+
+    button {
+      background: #ff80ab;
+      color: white;
+      border: none;
+      padding: 12px;
+      width: 100%;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #ec407a;
+    }
+
+    .footer {
+      margin-top: 15px;
+      font-size: 12px;
+      color: #888;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <h2> Fale comigo</h2>
+
+    <form action="https://formspree.io/f/SEU_CODIGO_AQUI" method="POST">
+
+      <input type="text" name="nome" placeholder="lavinia" required>
+
+      <input type="email" name="email" placeholder="lavinialalabc@gmail.com" required>
+
+      <textarea name="mensagem" placeholder="eu amo cachorros" required></textarea>
+
+      <button type="submit">Enviar </button>
+
+    </form>
+
+    <div class="footer">
+      Feito com carinho 
+    </div>
+  </div>
+
+</body>
+</html>
